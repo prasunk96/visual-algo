@@ -1,10 +1,14 @@
 import React from 'react'
+import AppBar from '../AppBar'
+import Body from '../Body'
+import styles from './style.module.scss';
 // import PropTypes from 'prop-types'
 
-function Home(props) {
+const Home = (props) => {
     return (
-        <div>
-            <p>Hello</p>
+        <div className={styles.container}>
+            <AppBar />
+            <Body />
         </div>
     )
 }

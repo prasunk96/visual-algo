@@ -5,7 +5,9 @@ import styles from './style.module.scss';
 const AppBar = props => {
     return (
         <div className={styles.appBar}>
-            <div className={styles.logo}>VisualAlgo.io</div>
+            <div className={styles.logo}>
+                <p>VisualAlgo</p>
+            </div>
         </div>
     )
 }

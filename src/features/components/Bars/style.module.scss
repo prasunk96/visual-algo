@@ -1,0 +1,11 @@
+@import "../../../colors.module.scss";
+.bar {
+  width: 30px;
+  background: $powderBlue;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+

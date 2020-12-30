@@ -1,0 +1,22 @@
+@import '../../colors.module.scss';
+.container {
+    background: $honeyDew;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iElement {
+    background: $imperialRed;
+}
+
+.jElement {
+    background: $imperialRed;
+}
+
+.sorted {
+    background-color: $prussianBlue;
+}

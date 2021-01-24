@@ -1,4 +1,27 @@
+@import '../../colors.module.scss';
+
 .container {
     display: flex;
     flex-direction: column;
+    height: 100%;
+}
+
+.bodyWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.toolbarContainer {
+    background: $prussianBlue;
+    border-top: 0.03em solid $prussianBlueFaded;
+    width: 20%;
+    
+}
+
+.bodyContainer {
+    background: $honeyDew;
+    border-top: 1px solid $powderBlue;
+    width: 80%;
+    display: flex;
 }

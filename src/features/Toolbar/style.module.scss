@@ -1,0 +1,183 @@
+@import '../../colors.module.scss';
+@import '../../fonts.module.scss';
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.generateButtonWrapper {
+  padding: 10px;
+  cursor: auto;
+}
+
+.generateButton {
+  font-size: 15px;
+  width: 100%;
+  background: none;
+  border: 1px solid $honeyDew;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: $honeyDew;
+    color: $prussianBlue;
+  }
+}
+
+.sortButtonWrapper {
+  padding: 10px;
+  cursor: auto;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sortButton {
+  font-size: 15px;
+  width: 100%;
+  background: none;
+  border: 1px solid $honeyDew;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: $honeyDew;
+    color: $prussianBlue;
+  }
+}
+
+.arraySize {
+  font-size: 15px;
+  display: inline-block;
+  margin: 0px 10px 10px 10px;
+  color: $honeyDew;
+}
+
+.separator {
+  width: 100%;
+  height: 0.03em;
+  background-color: $prussianBlueFaded;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: $prussianBlueFaded;
+  width: 100%;
+  height: 10px;
+  margin: 0;
+  border: none;
+  padding: 1px 2px;
+  border-radius: 14px;
+  background: $prussianBlueFaded;
+  box-shadow: inset 0 1px 0 0 $prussianBlue, inset 0 -1px 0 0 $prussianBlueFaded;
+  -webkit-box-shadow: inset 0 1px 0 0$prussianBlue, inset 0 -1px 0 0 $prussianBlueFaded;
+  outline: none; /* no focus outline */
+}
+
+input[type="range"]::-moz-range-track {
+  border: inherit;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  border: inherit;
+  color: transparent; /* don't drawn vertical reference line */
+  background: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+  background: transparent;
+}
+
+input[type="range"]::-ms-tooltip {
+  display: none;
+}
+
+/* thumb */
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 12px;
+  border: none;
+  border-radius: 12px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #529de1),
+    color-stop(100%, #245e8f)
+  ); /* android <= 2.2 */
+  background-image: -webkit-linear-gradient(
+    top,
+    #529de1 0,
+    #245e8f 100%
+  ); /* older mobile safari and android > 2.2 */
+  background-image: linear-gradient(
+    to bottom,
+    #529de1 0,
+    #245e8f 100%
+  ); /* W3C */
+}
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 12px;
+  border: none;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to bottom,
+    #529de1 0,
+    #245e8f 100%
+  ); /* W3C */
+}
+
+input[type="range"]::-ms-thumb {
+  width: 25px;
+  height: 12px;
+  border-radius: 12px;
+  border: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #529de1 0,
+    #245e8f 100%
+  ); /* W3C */
+}
+
+.currentAlgorithmButton {
+  color: $prussianBlue;
+  background: $honeyDew;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.algorithmButton {
+  padding: 10px;
+  color: $honeyDew;
+  font-size: 15px;
+  &:hover {
+    background: $honeyDew;
+    color: $prussianBlue;
+  }
+}

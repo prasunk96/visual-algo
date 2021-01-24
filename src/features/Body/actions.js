@@ -49,3 +49,8 @@ export const setPivot = (payload) => ({
     type: actionTypes.SET_PIVOT,
     payload
 })
+
+export const setCurrentHeapThree = (payload) => ({
+    type: actionTypes.SET_CURRENT_HEAPTHREE,
+    payload
+})

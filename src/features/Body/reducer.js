@@ -10,7 +10,8 @@ const initialState = {
   algorithm: '',
   currentMergeX: [],
   currentQuickTwo: [],
-  pivot: null
+  pivot: null,
+  currentHeapThree: []
 };
 
 const reducer = (state = initialState, action) => {
@@ -64,6 +65,11 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             pivot: action.payload
+        }
+    case actionTypes.SET_CURRENT_HEAPTHREE:
+        return {
+            ...state,
+            currentHeapThree: action.payload
         }
     default:
       return { ...state };

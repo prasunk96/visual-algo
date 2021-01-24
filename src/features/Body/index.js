@@ -13,6 +13,7 @@ const Body = ({
   currentMergeX,
   currentQuickTwo,
   pivot,
+  currentHeapThree
 }) => {
   const numWidth = Math.floor($(document).width() / (array.length * 3));
   const width = `${numWidth}px`;
@@ -57,7 +58,7 @@ const Body = ({
             const customClass = currentSwappers.includes(index)
               ? styles.swapElements
               : currentBubbleTwo.includes(index) ||
-                currentQuickTwo.includes(index) ||
+                currentQuickTwo.includes(index) || currentHeapThree.includes(index) ||
                 currentMergeX.includes(index)
               ? styles.bubbleElement
               : pivot === index
@@ -101,6 +102,7 @@ const mapStateToProps = (state) => ({
   currentMergeX: state.app.currentMergeX,
   currentQuickTwo: state.app.currentQuickTwo,
   pivot: state.app.pivot,
+  currentHeapThree: state.app.currentHeapThree
 });
 
 const mapDispatchToProps = (dispatch) => ({

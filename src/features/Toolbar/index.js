@@ -11,6 +11,7 @@ import {
 import { bubbleSort } from "../../algorithms/bubbleSort";
 import { mergeSort } from "../../algorithms/mergeSort";
 import { quickSort } from '../../algorithms/quickSort';
+import { heapSort } from '../../algorithms/heapSort';
 import { getRandomArray } from "../../utils/helpers";
 
 class Toolbar extends Component {
@@ -158,7 +159,9 @@ const mapDispatchToProps = () => (dispatch) => ({
         : algorithm === "mergeSort"
         ? mergeSort
         : algorithm === "quickSort" ?
-        quickSort : null;
+        quickSort
+        : algorithm === "heapSort" ?
+        heapSort : null;
     dispatch(setCurrentSorted([]));
     dispatch(setRunning(true));
     doSort(array, dispatch, speed);
